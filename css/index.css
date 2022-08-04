@@ -222,7 +222,7 @@ textarea{
 @media (max-width: 768px) {
 
     .hero-container{
-        padding-top: 20vh;
+        padding-top: 5vh;
     }
 
     .hero{
@@ -242,6 +242,12 @@ textarea{
         align-self: center;
     }
 
+    .hero-video{
+        margin: 2vh auto 5vh;
+        width: 95%;
+        height: 40vh;
+    }
+
     .horizontal-wrapper{
         padding: 1rem;
     }
@@ -252,5 +258,9 @@ textarea{
 
     .coach{
         width: 90vw;
+    }
+
+    .contact-wrapper{
+        padding: 1rem;
     }
 }

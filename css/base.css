@@ -328,6 +328,9 @@ footer{
         height: auto;
         margin-bottom: 2rem;
     }
+    .small-div{
+        padding: 0;
+    }
 
     .title-large{
         font-size: 2.4rem;
