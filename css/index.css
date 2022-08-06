@@ -4,15 +4,14 @@
 .hero{
     position: relative;
     width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
+    height: 120vh;
 }
 .hero-container{
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 10vh;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 .hero-img{
@@ -20,10 +19,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: top;
-    filter: brightness(.6);
+    height: auto;
 }
 
 .hero-title{
@@ -45,9 +41,9 @@
     top: 5%;
     padding: 1rem 1.25rem;
     margin-top: 2rem;
-    background: yellow;
-    color: #000;
-    border: 4px solid yellow;
+    background: var(--secondary);
+    color: var(--dark);
+    border: 2px solid var(--secondary);
     font-size: 1.2rem;
     font-family: "Akshar", sans-serif;
     font-weight: 600;
@@ -57,7 +53,7 @@
 }
 .hero-btn:hover{
     background: transparent;
-    color: yellow;
+    color: var(--secondary);
 }
 
 
@@ -84,7 +80,7 @@
 
 .hero-video{
     position: relative;
-    width: 85%;
+    width: 95%;
     height: 90vh;
     margin: 5vh auto;
     align-self: center;
@@ -106,7 +102,6 @@
     margin: 1rem;
     width: 480px;
     height: 280px;
-    background-color: yellow;
     padding: 1rem;
     transition: all .3s ease-in-out;
 }
@@ -129,7 +124,7 @@
     padding: 1rem;
     width: inherit;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     text-align: left;
     color: #FFF;
     display: flex;
@@ -140,8 +135,8 @@
     transition: all .3s ease-in-out;
 }
 .service-card--content:hover{
-    background: rgba(50, 50, 50, 0.6);
-    border-bottom: 1rem solid yellow;
+    background: rgba(50, 50, 50, 0.25);
+    border-bottom: 1rem solid var(--primary);
 }
 .service-card--title{
     font-size: 2rem;
@@ -204,9 +199,9 @@ textarea{
     margin: 0 auto;
     padding: .5rem 1.25rem;
     width: 100%;
-    color: #000;
-    background: yellow;
-    border: 4px solid yellow;
+    color: var(--dark);
+    background: var(--secondary);
+    border: 2px solid var(--secondary);
     font-size: 1.2rem;
     display: flex;
     flex-direction: row;
@@ -216,20 +211,22 @@ textarea{
     font-weight: 600;
     cursor: pointer;
 }
+.index-form--btn svg{
+    fill: var(--dark);
+}
 
 
 
 @media (max-width: 768px) {
 
-    .hero-container{
-        padding-top: 5vh;
-    }
-
     .hero{
-        background-position: 70% 0%;
+        height: 90vh;
     }
     .hero-container{
         background: rgba(0, 0, 0, 0.6);
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none !important;
     }
     .hero-title{
         font-size: 2.5rem;
@@ -256,11 +253,15 @@ textarea{
         width: 90vw;
     }
 
+    .msg-container .small-div{
+        padding: 1rem;
+    }
     .coach{
         width: 90vw;
     }
 
     .contact-wrapper{
         padding: 1rem;
+        flex-direction: column-reverse;
     }
 }

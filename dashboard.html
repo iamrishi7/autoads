@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="nav-logo">
+                <img src="img/coach.png" alt="Alpha Omega Combat Sports" class="logo-img">
+                <h1 class="logo-font">Auto Ads Pro</h1>
+            </div>
+            <div class="menu" id="menu">
+                <a href="#" class="menu-link">home</a>
+                <a href="#clients" class="menu-link">services</a>
+                <a href="#aboutus" class="menu-link">about us</a>
+                <a href="#contact"><p class="hero-btn1">Logout</p></a>
+            </div>
+            <svg id="menu-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24" onclick="toggleMenu()"><path id="menu-svg" d="M3,18H21M3,12H21M3,6H21" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+        </nav>
+    </header>
+
+    <div class="dashboard-wrapper">
+        <div id="sidepanel">
+            <a href="#" class="sidepanel-link"><i class="bi bi-person-fill sidepanel-link-ico"></i>Profile</a>
+            <a href="#" class="sidepanel-link"><i class="bi bi-megaphone-fill sidepanel-link-ico"></i>Campaigns</a>
+            <a href="#" class="sidepanel-link"><i class="bi bi-cash sidepanel-link-ico"></i>Transactions</a>
+            <div class="mini-spacer"></div>
+            <a href="#" class="sidepanel-link"><i class="bi bi-star-fill sidepanel-link-ico"></i>Upgrade</a>
+            <a href="#" class="sidepanel-link"><i class="bi bi-heart-fill sidepanel-link-ico"></i>Help & Support</a>
+        </div>
+        <div class="dashboard-container">
+
+        </div>
+    </div>
+    
+    <!-- Footer starts here -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-column branding-column">
+                <div class="footer-branding">
+                    <h2 class="brand-name logo-font">Auto Ads Pro</h2>
+                </div>
+                <br>
+                <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores harum ad illo nam unde.</p>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>About</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="#aboutus" class="footer-link">Our Story</a>
+                <a href="#contact" class="footer-link"">Case Studies</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Services</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="webdev.html" class="footer-link">YouTube Ads</a>
+                <a href="dmarketing.html" class="footer-link">Facebook Ads</a>
+                <a href="smarketing.html" class="footer-link">Google Ads</a>
+                <a href="smarketing.html" class="footer-link">Instagram Ads</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="footer-row">
+            <div class="social">
+                <p>&copy; Copyright 2022 Auto Ads Pro - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/62eeb4a837898912e9619dda/1g9q73ddq';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
