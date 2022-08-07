@@ -1,6 +1,9 @@
 const navBar = document.getElementById("nav");
 const menu = document.getElementById("menu");
 const servicesMenu = document.getElementById("servicesMenu");
+const sidepanel = document.getElementById("sidepanel");
+const sidepanelarrow = document.getElementById("sidepanel-arrow");
+var sidepanelStatus = 0;
 var navVar = 0;
 var servicesVAr = 0;
 
@@ -38,3 +41,16 @@ document.getElementById("hero").addEventListener("click", () =>{
     servicesMenu.style.display = "none";
     servicesVAr = 0;
 })
+
+function toggleSidepanel(){
+    if(sidepanelStatus == 0){
+        sidepanel.style.left = "0";
+        sidepanelStatus = 1;
+        sidepanelarrow.style.transform = "rotate(180deg)"
+    }
+    else{
+        sidepanel.style.left = "-80vw"
+        sidepanelStatus = 0;
+        sidepanelarrow.style.transform = "rotate(0)"
+    }
+}

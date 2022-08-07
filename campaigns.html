@@ -29,18 +29,23 @@
 
     <div class="dashboard-wrapper">
         <div id="sidepanel">
-            <a href="#" class="sidepanel-link"><i class="bi bi-person-fill sidepanel-link-ico"></i>Profile</a>
-            <a href="campaigns.html" class="sidepanel-link"><i class="bi bi-megaphone-fill sidepanel-link-ico"></i>Campaigns</a>
+            <a href="dashboard.html" class="sidepanel-link"><i class="bi bi-person-fill sidepanel-link-ico"></i>Profile</a>
+            <a href="#" class="sidepanel-link"><i class="bi bi-megaphone-fill sidepanel-link-ico"></i>Campaigns</a>
             <a href="transactions.html" class="sidepanel-link"><i class="bi bi-cash sidepanel-link-ico"></i>Transactions</a>
             <div class="mini-spacer"></div>
             <a href="#" class="sidepanel-link"><i class="bi bi-star-fill sidepanel-link-ico"></i>Upgrade</a>
             <a href="#" class="sidepanel-link"><i class="bi bi-heart-fill sidepanel-link-ico"></i>Help & Support</a>
-            <i class="toggle-sidepanel bi bi-arrow-right" id="sidepanel-arrow" onclick="toggleSidepanel()"></i>
         </div>
         <div class="dashboard-container">
-            <h1 class="dashboard-title">Welcome Vinay</h1>
-            <p class="dashboard-wrapper-title">Overview</p>
+            <p class="dashboard-wrapper-title">Your Campaigns</p>
             <div class="row">
+                <div class="card affiliate-card">
+                    <i class="bi bi-megaphone-fill affiliate-card-icon"></i>
+                    <div class="affiliate-card-content">
+                        <p>Total Campaigns</p>
+                        <h3>18</h3>
+                    </div>
+                </div>
                 <div class="card affiliate-card">
                     <i class="bi bi-megaphone-fill affiliate-card-icon"></i>
                     <div class="affiliate-card-content">
@@ -51,46 +56,25 @@
                 <div class="card affiliate-card">
                     <i class="bi bi-currency-rupee affiliate-card-icon"></i>
                     <div class="affiliate-card-content">
-                        <p>This Month's Spend</p>
+                        <p>Total Ad Spend</p>
                         <h3>2400</h3>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="card affiliate-card">
-                    <i class="bi bi-megaphone-fill affiliate-card-icon"></i>
-                    <div class="affiliate-card-content">
-                        <p>Total Campaigns</p>
-                        <h3>18</h3>
-                    </div>
-                </div>
-                <div class="card affiliate-card">
-                    <i class="bi bi-currency-rupee affiliate-card-icon"></i>
-                    <div class="affiliate-card-content">
-                        <p>Total Ad Spent</p>
-                        <h3>2400</h3>
-                    </div>
-                </div>
-                <div class="card affiliate-card">
-                    <i class="bi bi-currency-rupee affiliate-card-icon"></i>
-                    <div class="affiliate-card-content">
-                        <p>Refunds</p>
-                        <h3>0</h3>
-                    </div>
-                </div>
-            </div>
+            <br>
             <div class="mini-spacer"></div>
             <p class="dashboard-wrapper-title">Recent Referral Activities</p>
             <div class="table-wrapper">
                 <table class="fl-table">
                     <thead>
-                    <tr>
-                        <th>Refrence ID</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Daily Budget</th>
-                        <th>Status</th>
-                    </tr>
+                        <tr>
+                            <th>Refrence ID</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Tags</th>
+                            <th>Daily Budget</th>
+                            <th>Status</th>
+                        </tr>
                     </thead>
                     <tbody>
                     <tr>
@@ -99,6 +83,7 @@
                         <td>Content 1</td>
                         <td>Content 1</td>
                         <td>Content 1</td>
+                        <td>Content 1</td>
                     </tr>
                     <tr>
                         <td>Content 2</td>
@@ -106,6 +91,7 @@
                         <td>Content 2</td>
                         <td>Content 2</td>
                         <td>Content 2</td>
+                        <td>Content 2</td>
                     </tr>
                     <tr>
                         <td>Content 3</td>
@@ -113,8 +99,10 @@
                         <td>Content 3</td>
                         <td>Content 3</td>
                         <td>Content 3</td>
+                        <td>Content 3</td>
                     </tr>
                     <tr>
+                        <td>Content 4</td>
                         <td>Content 4</td>
                         <td>Content 4</td>
                         <td>Content 4</td>

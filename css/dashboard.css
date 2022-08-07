@@ -1,23 +1,37 @@
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(185, 185, 185); 
+    border-radius: 16px;
+}
+
 .dashboard-wrapper{
     position: relative;
-    padding-top: 10vh;
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 #sidepanel{
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 10vh;
     width: 20vw;
-    height: 100vh;
+    height: 90vh;
     padding: 2rem 1rem;
     background: var(--dark);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    z-index: 99;
 }
 .sidepanel-link{
     position: relative;
@@ -39,4 +53,283 @@
 }
 .sidepanel-link:hover .sidepanel-link-ico{
     transform: translateX(-.25rem);
+}
+
+
+
+.dashboard-container{
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    width: 75vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    justify-self: flex-end;
+}
+.dashboard-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+
+
+.dashboard-title{
+    position: relative;
+    margin: 1.5rem 0;
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+.dashboard-wrapper-title{
+    position: relative;
+    margin-bottom: 1vh;
+}
+
+
+
+/* Main Dashboard Styling */
+
+.row{
+    position: relative;
+    margin-bottom: 3vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.column{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.card{
+    position: relative;
+    margin: 0 2.25vw 0 0;
+    width: auto;
+    padding: 2vh 1.5vw;
+    border-radius: 16px;
+    background-color: #FFF;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1), -4px 0 10px rgba(0,0,0,0.1);
+    transition: all .3s ease;
+}
+.card:hover{
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px 0 20px rgba(0,0,0,0.1);
+}
+
+
+.affiliate-card{
+    position: relative;
+    width: 20vw;
+    height: 18vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.affiliate-card-icon{
+    position: relative;
+    margin-right: 1.25vw;
+    font-size: 1.6vw;
+    color: darkslategray;
+}
+.affiliate-card-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.affiliate-card-content p{
+    font-size: 1vw;
+    color: darkslategray;
+}
+.affiliate-card-content h3{
+    font-size: 2vw;
+    color: #222;
+}
+
+
+
+/* Table Styling */
+
+.table-wrapper{
+    width: 90%;
+    margin: 10px 0 5vh;
+    box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.1 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: darkslategray;
+    background: #ffffff;
+    text-transform: uppercase;
+}
+
+
+.fl-table tr{
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+
+    .table-wrapper{
+        width: 100%;
+    }
+
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+.toggle-sidepanel{
+    position: absolute;
+    top: 4px;
+    right: -2.7rem;
+    padding: .5rem .75rem;
+    background: linear-gradient(120deg, rgb(47, 47, 233), blue);
+    color: #FFF;
+    font-size: 1.2rem;
+    transform: rotate(0deg);
+    display: none;
+}
+
+footer{
+    display: none !important;
+}
+
+
+@media (max-width: 768px) {
+    #sidepanel{
+        left: -80vw;
+        width: 80vw;
+        transition: all .4s ease;
+    }
+    .toggle-sidepanel{
+        display: unset;
+    }
+
+    .dashboard-container{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+
+    .dashboard-title{
+        margin-top: 2.5rem;
+        font-size: 1.25rem;
+    }
+
+    .affiliate-card{
+        width: 100%;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .affiliate-card-icon{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
+    .affiliate-card-content p{
+        font-size: .8rem;
+        margin-bottom: .5rem;
+    }
+    .affiliate-card-content h3{
+        font-size: 1.25rem;
+    }
+
+
 }
